@@ -1,0 +1,43 @@
+<!-- activity_result.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Pontuação do Quiz -->
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sua pontuação:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/3"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Mensagem de feedback -->
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parabéns! Você concluiu o Quiz!"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp" />
+
+    <!-- Botão para voltar ao início -->
+    <Button
+        android:id="@+id/backToHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar ao início"
+        android:layout_marginTop="30dp"
+        android:onClick="voltarQuiz"/>
+
+</LinearLayout>

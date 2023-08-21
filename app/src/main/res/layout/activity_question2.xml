@@ -1,0 +1,59 @@
+<!-- activity_quiz_question1.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/questionText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual é a capital da França?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />/>
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionText1"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/optionA1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A) Paris" />
+
+        <RadioButton
+            android:id="@+id/optionB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B) Londres" />
+
+        <RadioButton
+            android:id="@+id/optionC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C) Roma" />
+
+        <RadioButton
+            android:id="@+id/optionD1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D) Madrid" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">>>"
+        android:layout_below="@id/optionsRadioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="Question3"/>
+
+</RelativeLayout>

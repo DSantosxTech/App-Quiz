@@ -1,0 +1,60 @@
+<!-- activity_quiz_question3.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/questionText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual é o planeta mais próximo do Sol?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />/>
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionText3"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/optionA3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A) Vênus" />
+
+        <RadioButton
+            android:id="@+id/optionB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B) Marte" />
+
+        <RadioButton
+            android:id="@+id/optionC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C) Mercúrio" />
+
+        <RadioButton
+            android:id="@+id/optionD3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D) Júpiter" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Respostas"
+        android:layout_below="@id/optionsRadioGroup3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="EnviarRespostas"/>
+
+</RelativeLayout>
